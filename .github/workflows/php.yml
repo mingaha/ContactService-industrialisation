@@ -36,5 +36,12 @@ jobs:
     - name: install csfixer
       run: composer global require friendsofphp/php-cs-fixer
       
+    - name: install phpstan
+      run: composer require --dev phpstan/phpstan
+      
+ 
+      
+ 
+      
  
      
