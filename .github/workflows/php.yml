@@ -41,7 +41,7 @@ jobs:
       run: composer exec phpunit tests/unitTests/ContactServiceUnitTest.php
       
     - name: test inte
-     # run: composer exec phpunit tests/integrationTests/ContactServiceIntegrationTest.php
+      run: composer exec phpunit tests/integrationTests/ContactServiceIntegrationTest.php
       
  
       
