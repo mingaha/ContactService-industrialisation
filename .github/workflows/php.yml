@@ -29,15 +29,19 @@ jobs:
       
     - name: update composer
       run: composer update
-      
-    - name: test
-      run: composer exec phpunit tests/unitTests/ContactServiceUnitTest.php
+
       
     - name: install csfixer
       run: composer global require friendsofphp/php-cs-fixer
       
     - name: install phpstan
       run: composer require --dev phpstan/phpstan
+      
+    - name: test uni
+      run: composer exec phpunit tests/unitTests/ContactServiceUnitTest.php
+      
+    - name: test inte
+      run: composer exec phpunit tests/integrationTests/ContactServiceIntegrationTest.php
       
  
       
